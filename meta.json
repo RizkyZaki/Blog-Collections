@@ -1,5 +1,11 @@
 [
   {
+    "slug": "creating-custom-hooks-in-react",
+    "title": "Step-by-Step Guide Creating a Custom Hook in React",
+    "img": "https://semicolon.dev/static/complete-react-js-hooks-tutorial-for-beginners-usestate-useeffect-with-examples.png",
+    "date": "November, 2024"
+  },
+  {
     "slug": "how-to-convert-nextjs-app-into-pwa",
     "title": "How to convert your Next JS App into a Progressive Web App",
     "img": "https://miro.medium.com/v2/resize:fit:1000/0*TMmvFXObXEKuOBBF.jpg",
