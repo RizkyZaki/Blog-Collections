@@ -1,6 +1,19 @@
-# Step-by-Step Guide Creating a Custom Hook in React
+# Step-by-Step Guide: Creating a Custom Hook in React
 
-## What Are Custom Hooks?
+![React Custom Hooks](https://semicolon.dev/static/complete-react-js-hooks-tutorial-for-beginners-usestate-useeffect-with-examples.png)
+
+## Table of Contents
+
+1. 🧑‍💻 [What Are Custom Hooks?](#what-are-custom-hooks)
+2. 🔍 [Example: The `useFetch` Hook](#example-the-usefetch-hook)
+3. ⚡ [Step 1: Set Up a React Project](#step-1-set-up-a-react-project)
+4. 🛠️ [Step 2: Add the Custom Hook](#step-2-add-the-custom-hook)
+5. 🖥️ [Step 3: Use the Hook in a Component](#step-3-use-the-hook-in-a-component)
+6. 🚀 [Step 4: Run the Application](#step-4-run-the-application)
+
+---
+
+## What Are Custom Hooks? 🧑‍💻
 
 Custom Hooks are JavaScript functions in React that start with `use`. They allow you to encapsulate logic or functionality for reuse across multiple components, reducing code duplication and improving maintainability.
 
@@ -8,7 +21,7 @@ In this tutorial, we’ll create a custom hook called `useFetch` that simplifies
 
 ---
 
-## Example: The `useFetch` Hook
+## Example: The `useFetch` Hook 🔍
 
 The `useFetch` hook is designed to:
 
@@ -18,7 +31,7 @@ The `useFetch` hook is designed to:
 
 ---
 
-## Step 1: Set Up a React Project
+## Step 1: Set Up a React Project ⚡
 
 If you don’t already have a React project, create one by running the following commands:
 
@@ -31,7 +44,7 @@ This will set up a new React project in the `my-app` folder.
 
 ---
 
-## Step 2: Add the Custom Hook
+## Step 2: Add the Custom Hook 🛠️
 
 1. Inside the `src` directory of your project, create a folder named `hooks`:
    ```
@@ -70,7 +83,7 @@ export const useFetch = (url) => {
 
 ---
 
-## Step 3: Use the Hook in a Component
+## Step 3: Use the Hook in a Component 🖥️
 
 1. Create a new component, `DataDisplay.js`, in the `src` directory.
 2. Add the following code to `DataDisplay.js`:
@@ -104,7 +117,7 @@ export default DataDisplay;
 
 ---
 
-## Step 4: Run the Application
+## Step 4: Run the Application 🚀
 
 1. Start the development server:
    ```bash
@@ -114,4 +127,4 @@ export default DataDisplay;
 
 ---
 
-With these steps, you've successfully created and used a reusable custom hook in React!
+With these steps, you've successfully created and used a reusable custom hook in React! 🎉
