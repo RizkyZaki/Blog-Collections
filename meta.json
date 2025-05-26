@@ -1,5 +1,11 @@
 [
   {
+    "slug": "docker-babies",
+    "title": "Mengenal Docker, Container & Compose dengan Penjelasan Super Gampang",
+    "img": "resources/docker-babies.png",
+    "date": "November, 2024"
+  },
+  {
     "slug": "custom-hook-react",
     "title": "Step-by-Step Guide Creating a Custom Hook in React",
     "img": "https://semicolon.dev/static/complete-react-js-hooks-tutorial-for-beginners-usestate-useeffect-with-examples.png",

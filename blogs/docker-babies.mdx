@@ -1,0 +1,112 @@
+# Docker Itu Apa? Bayi Aja Ngerti! 🐣🐳
+
+![Docker Thumbnail](resource/docker-babies.png)
+
+Halo teman-teman developer kece! Kali ini aku mau bahas Docker, tapi pake **bahasa bayi**, jadi jangan takut kalau kamu masih newbie. Yuk kita mulai petualangan dunia kontainer!
+
+---
+
+## 📚 Daftar Isi
+
+- [🧁 Apa Itu Docker Image?](#-apa-itu-docker-image)
+- [🚀 Apa Itu Docker Container?](#-apa-itu-docker-container)
+- [🧑‍🍳 Apa Itu Docker Compose?](#-apa-itu-docker-compose)
+- [🧠 Kesimpulan](#-kesimpulan)
+- [✨ Siap Mainan Docker?](#-siap-mainan-docker)
+- [🙌 Terima Kasih!](#-terima-kasih)
+
+---
+
+## 🧁 Apa Itu Docker Image?
+
+> **Image itu kayak cetakan kue.**
+
+Bayangin kamu punya cetakan kue bentuk bintang ⭐. Cetakan ini nggak bisa dimakan, tapi bisa dipakai buat bikin kue yang bentuknya sama.
+
+Nah di Docker, **image** itu file template yang isinya:
+- Sistem operasi mini (base image)
+- Aplikasi (kayak NGINX, Node.js, MySQL, dll)
+- Semua hal yang dibutuhin buat ngejalanin aplikasi itu.
+
+### Contoh:
+```bash
+docker pull nginx
+```
+Kamu kayak lagi ngambil cetakan kue dari toko online (Docker Hub).
+
+---
+
+## 🚀 Apa Itu Docker Container?
+
+> **Container itu kuenya yang udah jadi. Bisa dimakan!**
+
+Setelah kamu punya cetakan (image), kamu tuang adonan (kode dan config), terus panggang... Taraaa~ jadi kuenya! Itulah **container**.
+
+Container adalah **image yang sedang dijalankan**.
+
+### Contoh:
+```bash
+docker run nginx
+```
+Kamu lagi ngidupin server dari cetakan `nginx`. Bisa dikontrol, dimakan (eh), dimatiin, atau dibuang.
+
+---
+
+## 🧑‍🍳 Apa Itu Docker Compose?
+
+> **Docker Compose itu koki yang masak banyak menu sekaligus.**
+
+Bayangin kamu mau masak:
+- Nasi 🍚
+- Ayam goreng 🍗
+- Sayur 🥦
+- Sambal 🌶️
+
+Kalau masak satu-satu, capek banget! Tapi kalau kamu punya **koki** yang bisa baca **daftar resep**, cukup kasih 1 kertas aja (`docker-compose.yml`) dan dia langsung masak semua.
+
+### Contoh `docker-compose.yml`:
+
+```yaml
+version: "3.9"
+services:
+  web:
+    image: nginx
+  db:
+    image: mysql
+  cache:
+    image: redis
+```
+
+Terus kamu jalankan:
+
+```bash
+docker compose up
+```
+
+Boom! Semua langsung hidup bareng kayak rumah tangga harmonis.
+
+---
+
+## 🧠 Kesimpulan
+
+| Istilah | Ibarat | Fungsi |
+|--------|--------|--------|
+| **Image** | Cetakan kue ⭐ | Template aplikasi |
+| **Container** | Kue yang jadi 🧁 | Image yang sedang hidup |
+| **Docker Hub** | Toko online kue 🛒 | Tempat download image |
+| **Docker Compose** | Koki masak banyak 🍳 | Jalanin banyak container sekaligus |
+
+---
+
+## ✨ Siap Mainan Docker?
+
+Coba deh install Docker, terus mulai dari:
+```bash
+docker run hello-world
+```
+
+Kalau keluar tulisan "Hello from Docker!", artinya kamu udah siap menjelajahi dunia kontainer kayak DevOps sejati!
+
+---
+
+## 🙌 Terima Kasih!
