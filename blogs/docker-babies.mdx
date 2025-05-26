@@ -4,13 +4,12 @@
 
 Halo teman-teman developer kece! Kali ini aku mau bahas Docker, tapi pake **bahasa bayi**, jadi jangan takut kalau kamu masih newbie. Yuk kita mulai petualangan dunia kontainer!
 
----
-
 ## 📚 Daftar Isi
 
 - [🧁 Apa Itu Docker Image?](#-apa-itu-docker-image)
 - [🚀 Apa Itu Docker Container?](#-apa-itu-docker-container)
 - [🧑‍🍳 Apa Itu Docker Compose?](#-apa-itu-docker-compose)
+- [📦 Apa Itu Docker Volume?](#-apa-itu-docker-volume)
 - [🧠 Kesimpulan](#-kesimpulan)
 - [✨ Siap Mainan Docker?](#-siap-mainan-docker)
 - [🙌 Terima Kasih!](#-terima-kasih)
@@ -87,14 +86,47 @@ Boom! Semua langsung hidup bareng kayak rumah tangga harmonis.
 
 ---
 
+## 📦 Apa Itu Docker Volume?
+
+> **Volume itu kayak laci khusus buat nyimpen barang, biar gak ilang pas mainan dibongkar pasang.**
+
+Bayangin kamu punya mainan yang suka kamu bongkar-pasang (kayak Lego). Nah, kamu pasti punya **laci** tempat nyimpen **barang penting** kayak stiker, baterai, atau koleksi mini-figurenya.
+
+Kalau mainannya rusak atau kamu ganti baru, isi lacinya **tetap aman**.
+
+### 🚢 Hubungannya dengan Docker:
+
+Di Docker:
+- Container itu kayak mainan: **bisa dihancurkan, dibikin ulang.**
+- Tapi... **data penting** (misalnya database, file upload, config user) **harus disimpan** di tempat khusus biar gak hilang saat container mati.
+
+Nah, **Docker Volume** adalah **tempat penyimpanan data permanen** di luar container.
+
+### 🔧 Contoh:
+```bash
+docker run -v mydata:/app/data myimage
+```
+Artinya:
+- Kamu bikin volume bernama `mydata`.
+- Semua data di dalam folder `/app/data` akan disimpan ke `mydata` dan **tetap ada** walau containernya dihentikan atau dihapus.
+
+### 🤓 Kenapa Volume Penting?
+
+- 📁 **Data persist** (tidak hilang saat container mati)
+- 💨 **Lebih cepat** dan aman dibanding mount manual dari host
+- 🔄 **Bisa dipakai banyak container** bareng-bareng (misal: container frontend & backend sharing folder)
+
+---
+
 ## 🧠 Kesimpulan
 
-| Istilah | Ibarat | Fungsi |
-|--------|--------|--------|
-| **Image** | Cetakan kue ⭐ | Template aplikasi |
-| **Container** | Kue yang jadi 🧁 | Image yang sedang hidup |
-| **Docker Hub** | Toko online kue 🛒 | Tempat download image |
-| **Docker Compose** | Koki masak banyak 🍳 | Jalanin banyak container sekaligus |
+| Istilah         | Ibarat                | Fungsi                                   |
+|----------------|-----------------------|-------------------------------------------|
+| **Image**       | Cetakan kue ⭐         | Template aplikasi                        |
+| **Container**   | Kue yang jadi 🧁       | Image yang sedang hidup                  |
+| **Docker Hub**  | Toko online kue 🛒     | Tempat download image                    |
+| **Compose**     | Koki masak banyak 🍳   | Jalanin banyak container sekaligus       |
+| **Volume**      | Laci penyimpanan 🗄️    | Simpan data biar gak hilang              |
 
 ---
 
@@ -104,7 +136,6 @@ Coba deh install Docker, terus mulai dari:
 ```bash
 docker run hello-world
 ```
-
 Kalau keluar tulisan "Hello from Docker!", artinya kamu udah siap menjelajahi dunia kontainer kayak DevOps sejati!
 
 ---
