@@ -1,5 +1,11 @@
 [
   {
+    "slug": "how-ai-works",
+    "title": "Cara Kerja AI: Dari Nol Hingga Pintar",
+    "img": "https://raw.githubusercontent.com/RizkyZaki/Blog-Collections/refs/heads/main/resource/how-ai-works.png",
+    "date": "May, 2025"
+  },
+  {
     "slug": "docker-babies",
     "title": "Docker Buat yang Baru Lahir di Dunia Dev",
     "img": "https://raw.githubusercontent.com/RizkyZaki/Blog-Collections/refs/heads/main/resource/docker-babies.png",
