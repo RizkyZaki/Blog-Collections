@@ -1,5 +1,17 @@
 [
   {
+    "slug": "rest-api-vs-graphql",
+    "title": "REST API vs GraphQL: Mana yang Lebih Cocok untuk Project Modern?",
+    "img": "https://raw.githubusercontent.com/RizkyZaki/Blog-Collections/refs/heads/main/resource/rvg.png",
+    "date": "January, 2026"
+  },
+  {
+    "slug": "cicd-pipeline-deploy-tanpa-deg-degan",
+    "title": "CI/CD Pipeline: Cara Biar Deploy Nggak Deg-deg-an",
+    "img": "https://raw.githubusercontent.com/RizkyZaki/Blog-Collections/refs/heads/main/resource/cicd.png",
+    "date": "January, 2026"
+  },
+  {
     "slug": "how-ai-works",
     "title": "Cara Kerja AI: Dari Nol Hingga Pintar",
     "img": "https://raw.githubusercontent.com/RizkyZaki/Blog-Collections/refs/heads/main/resource/how-ai-works.png",
