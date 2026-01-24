@@ -209,12 +209,17 @@ query {
 
 ### Benchmark Sederhana:
 
-| Metric | REST API | GraphQL |
-|--------|----------|---------|
-| Request count | 5-10 requests | 1 request |
-| Data size | 100% (over-fetch) | 40-60% (exact) |
-| Cache strategy | Easy (HTTP) | Complex (Apollo) |
-| Complexity | Low | Medium-High |
+**📊 REST API:**
+- Request count: 5-10 requests
+- Data size: 100% (over-fetch)
+- Cache strategy: Easy (HTTP)
+- Complexity: Low
+
+**⚡ GraphQL:**
+- Request count: 1 request
+- Data size: 40-60% (exact)
+- Cache strategy: Complex (Apollo)
+- Complexity: Medium-High
 
 ---
 
@@ -413,16 +418,37 @@ query {
 
 ### Decision Matrix
 
-| Kriteria | REST | GraphQL |
-|----------|------|---------|
-| **Team expertise** | Beginner-friendly | Need learning |
-| **Data complexity** | Simple/flat | Complex/nested |
-| **Client variety** | Few clients | Multiple (web, mobile, IoT) |
-| **Bandwidth concern** | Not critical | Critical |
-| **Caching need** | High | Low-Medium |
-| **Public API** | ✅ Better | Possible |
-| **Real-time** | WebSockets | Subscriptions ✅ |
-| **Development speed** | Fast start | Slower start, faster iteration |
+**🎯 Team Expertise:**
+- REST: Beginner-friendly
+- GraphQL: Need learning
+
+**📊 Data Complexity:**
+- REST: Simple/flat
+- GraphQL: Complex/nested
+
+**📱 Client Variety:**
+- REST: Few clients
+- GraphQL: Multiple (web, mobile, IoT)
+
+**🌐 Bandwidth Concern:**
+- REST: Not critical
+- GraphQL: Critical
+
+**💾 Caching Need:**
+- REST: High
+- GraphQL: Low-Medium
+
+**🔓 Public API:**
+- REST: ✅ Better
+- GraphQL: Possible
+
+**⚡ Real-time:**
+- REST: WebSockets
+- GraphQL: Subscriptions ✅
+
+**🚀 Development Speed:**
+- REST: Fast start
+- GraphQL: Slower start, faster iteration
 
 ### Real World Examples
 
